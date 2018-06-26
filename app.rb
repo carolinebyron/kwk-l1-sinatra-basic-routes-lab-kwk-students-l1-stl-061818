@@ -1,4 +1,13 @@
-require_relative 'config/environment'
+require 'sinatra'
 
-class App < Sinatra::Base
+class App < Sinatra::Base 
+  get '/' do
+    "My name is Caroline!"
+  end
+  
+  get '/favorite-song' do
+  "likes taylor swift"
+
+end
+  
 end
